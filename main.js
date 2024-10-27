@@ -24,10 +24,10 @@ quantityInput.addEventListener('input', updateTotalPrice); // Task 2: Update tot
 
 // Task 4: Handle Order Submission
 
-placeOrderButton.addEventListener('Click', function(){
+placeOrderButton.addEventListener('click', function(){
     const selectedProduct = productSelector.options[productSelector.selectedIndex].text; // Display Select Product text
     const quantity = quantityInput.value; // Display quantity input value
     const totalPrice = totalPriceElement.textContent; // Display total Price
 
-    orderSummary.textContent = `You order ${quantity} of ${slectedProduct}. Total price: $${totalPrice}`;  // Display order Summary
+    orderSummary.textContent = `You order ${quantity} of ${selectedProduct}. Total price: $${totalPrice}`;  // Display order Summary
 });
