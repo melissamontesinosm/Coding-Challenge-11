@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Wonka Industries </title>
+</head>
+<body>
+    <h2> Place your order </h2>
+
+    <label for="product-selector"> Select a Product: </label>
+    <select id="product-selector">
+        <option value= "7.99"> Wonka Bar - $7.99 </option>
+        <option value= "9.00"> Chewing Gum Meal - $9.00 </option>
+        <option value= "12.50"> Ice Cream that Never Melts - $12.50 </option>
+    </select>
+
+    <label for= "quantity"> Quantity: </label>
+    <input type="number" id="quanity" value="1" min="1">
+
+    <p> Total Price: $<span id="total-price"> 10 </span></p>
+
+    <button id="place-order"> Place Order </button>
+
+    <p id="order-summary"></p>
+
+    <script src="main.js"></script>
+</body>
+</html>
