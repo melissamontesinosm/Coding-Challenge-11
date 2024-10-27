@@ -17,3 +17,17 @@ function updateTotalPrice() {
 
     totalPriceElement.textContent = totalPrice.toFixed(2); // Updating total price
 }
+
+productSelector.addEventListener('change', updateTotalPrice); //Task 2: Update price when product is selected 
+quantityInput.addEventListener('input', updateTotalPrice); // Task 2: Update total price according to input quanity
+
+
+// Task 4: Handle Order Submission
+
+placeOrderButton.addEventListener('Click', function(){
+    const selectedProduct = productSelector.options[productSelector.selectedIndex].text; // Display Select Product text
+    const quantity = quantityInput.value; // Display quantity input value
+    const totalPrice = totalPriceElement.textContent; // Display total Price
+
+    orderSummary.textContent = `You order ${quantity} of ${slectedProduct}. Total price: $${totalPrice}`;  // Display order Summary
+});
